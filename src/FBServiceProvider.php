@@ -17,7 +17,7 @@ class FBServiceProvider extends ServiceProvider
 
         $this->app->bind('FB', function()
         {
-            return new Firebase();
+            return new FB();
         });
 
         $this->app->booting(function()
