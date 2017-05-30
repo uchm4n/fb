@@ -2,14 +2,6 @@
 
 namespace Ucha19871\FB;
 
-class FB
-{
-    static function __callStatic($method, $args)
-    {
-        return Firebase::instance()->{$method}(...$args);
-    }
-}
-
 class Firebase
 {
 
@@ -17,12 +9,6 @@ class Firebase
     {
         $this->database_url = config('services.firebase.database_url');
         $this->secret = config('services.firebase.secret');
-    }
-
-
-    static function instance()
-    {
-        return new self();
     }
 
     public function send()
@@ -85,10 +71,4 @@ class Firebase
     {
         return $this->send()->delete($path);
     }
-}
-
-function tap($value, $callback)
-{
-    $callback($value);
-    return $value;
 }

@@ -1,11 +1,13 @@
 <?php
-
+namespace Ucha19871\FB;
 
 use Illuminate\Support\ServiceProvider;
-use Ucha19871\FB\FB;
+
 
 class FBServiceProvider extends ServiceProvider
 {
+
+    protected $defer = false;
 
     /**
      * Register the application services.
@@ -17,7 +19,7 @@ class FBServiceProvider extends ServiceProvider
 
         $this->app->bind('FB', function()
         {
-            return new FB;
+            return new Firebase();
         });
 
         $this->app->booting(function()
