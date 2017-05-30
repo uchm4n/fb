@@ -7,8 +7,6 @@ use Illuminate\Support\ServiceProvider;
 class FBServiceProvider extends ServiceProvider
 {
 
-    protected $defer = false;
-
     /**
      * Register the application services.
      *

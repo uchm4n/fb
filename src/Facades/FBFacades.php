@@ -11,7 +11,7 @@ class FBFacades extends Facade
 
     protected static function getFacadeAccessor()
     {
-        return 'FB';
+        return 'fb';
     }
 
 }

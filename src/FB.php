@@ -2,7 +2,7 @@
 
 namespace Ucha19871\FB;
 
-class Firebase
+class FB
 {
 
     public function __construct()
