@@ -14,9 +14,17 @@ class FBServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind('fb', function()
+
+        $this->app->bind('FB', function()
         {
             return new FB;
         });
+
+        $this->app->booting(function()
+        {
+            $loader = \Illuminate\Foundation\AliasLoader::getInstance();
+            $loader->alias('FB', 'Ucha19871\FB\Facades\FBFacades');
+        });
+
     }
 }

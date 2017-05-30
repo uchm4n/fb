@@ -1,6 +1,8 @@
 {
   "name": "ucha19871/fb",
   "description": "Firebase REST API easy wrapper for Laravel",
+  "license": "MIT",
+  "keywords": ["framework", "laravel","firebase","wrapper","rest","api"],
   "authors": [
     {
       "name": "ucha19871",
@@ -13,6 +15,7 @@
     }
   },
   "require": {
+    "php": ">=7.1",
     "ktamas77/firebase-php": "^2.2"
   }
 }
