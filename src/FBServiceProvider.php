@@ -26,5 +26,6 @@ class FBServiceProvider extends ServiceProvider
             $loader->alias('FB', 'Ucha19871\FB\Facades\FBFacades');
         });
 
+
     }
 }

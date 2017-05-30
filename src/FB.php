@@ -9,27 +9,32 @@ class FB
     {
         $this->database_url = config('services.firebase.database_url');
         $this->secret = config('services.firebase.secret');
+
     }
+
 
     public function send()
     {
         return new \Firebase\FirebaseLib($this->database_url, $this->secret);
     }
 
+
     /**
      * Fetch data from Firebase
      * @param string $path
+     * @param array $options
      * @return array
      */
-    public function get(string $path)
+    public function get(string $path, array $options = [])
     {
-        return $this->send()->get($path);
+        return $this->send()->get($path, $options);
     }
 
     /**
      * Writing data into Firebase with a PUT request
      * @param string $path
      * @param array $data
+     * @param array $options
      * @return array
      */
     public function set(string $path, array $data, array $options = [])
@@ -65,10 +70,11 @@ class FB
     /**
      * Deletes data from Firebase
      * @param string $path
+     * @param array $options
      * @return array
      */
-    public function delete(string $path)
+    public function delete(string $path, array $options = [])
     {
-        return $this->send()->delete($path);
+        return $this->send()->delete($path, $options);
     }
 }
