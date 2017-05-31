@@ -5,13 +5,17 @@ namespace Ucha19871\FB;
 class FB
 {
 
+
     public function __construct()
     {
         $this->database_url = config('services.firebase.database_url');
         $this->secret = config('services.firebase.secret');
-
     }
 
+    public function setBaseURI($baseURI)
+    {
+        $this->send()->setBaseURI($baseURI);
+    }
 
     public function send()
     {

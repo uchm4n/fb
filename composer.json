@@ -2,7 +2,14 @@
   "name": "ucha19871/fb",
   "description": "Firebase REST API easy wrapper for Laravel",
   "license": "MIT",
-  "keywords": ["framework", "laravel","firebase","wrapper","rest","api"],
+  "keywords": [
+    "framework",
+    "laravel",
+    "firebase",
+    "wrapper",
+    "rest",
+    "api"
+  ],
   "authors": [
     {
       "name": "ucha19871",
@@ -14,8 +21,18 @@
       "Ucha19871\\FB\\": "src/"
     }
   },
+  "autoload-dev": {
+    "psr-4": {
+      "Ucha19871\\FB\\Tests\\": "tests/"
+    }
+  },
   "require": {
     "php": ">=7.1",
-    "ktamas77/firebase-php": "^2.2"
+    "ktamas77/firebase-php": "^2.2",
+    "illuminate/support": "^5.4"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.0",
+    "orchestra/testbench": "~3.0"
   }
 }
