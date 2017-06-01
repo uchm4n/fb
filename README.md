@@ -1,6 +1,6 @@
-[![Latest Version on Packagist][ico-version]][link-packagist]
-[![Software License][ico-license]](LICENSE)
-[![Total Downloads][ico-downloads]][link-downloads]
+[![Latest Version on Packagist][ico-version]][link-packagist]    
+[![Software License][ico-license]](LICENSE)    
+[![Total Downloads][ico-downloads]][link-downloads]    
 
 # Firebase REST API easy wrapper for Laravel
 
