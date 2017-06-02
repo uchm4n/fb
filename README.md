@@ -1,6 +1,6 @@
 
 # Firebase REST API easy wrapper for Laravel
-------
+
 [![Latest Stable Version](https://poser.pugx.org/ucha19871/fb/v/stable)](https://packagist.org/packages/ucha19871/fb) 
 [![Total Downloads](https://poser.pugx.org/ucha19871/fb/downloads)](https://packagist.org/packages/ucha19871/fb) 
 [![License](https://poser.pugx.org/ucha19871/fb/license)](https://packagist.org/packages/ucha19871/fb) 
